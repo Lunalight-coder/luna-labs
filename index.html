@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna's Lobby</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect"href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    
+
+<style>
+    h1,h2,h3{font-family: 'Orbitron',  sans-serif!important;letter-spacing: 2px;}
+    p,li,a{font-family: 'Quicksand',sans-serif!important;font-weight:500;}
+</style>
+</head>
+<body>
+
+    <div class="glitter-container">
+        <div class="star star1"></div>
+        <div class="star star2"></div>
+        <div class="star star3"></div>
+        <div class="star star4"></div>
+        <div class="star star5"></div>
+    </div>
+
+
+    <h1 style="text-align:center;">Welcome to Luna's Lobby</h1>
+    <hr>
+    
+    <p>Welcome to0 Luna's Lobby :D</p> 
+    <p>This is my cozy place on the internet, and also my first one! This took a long time to code cuz.. yeah im a noob. But here it is UwU</p>
+    
+    <p>First of all, lemme show you around here. This website has 4 main sections:</p>
+    <ul>
+        <li><a href="novelf.html">Novelf </a></li>
+        <li><a href="novel.html">Novel </a></li>
+        <li><a href="#cool">Factopia</a></li>
+        <li><a href="#mini">Mini-Cafe (but with a twist :)</a></li>
+        <li><a href="#about">About the creator</a></li>
+    </ul>
+
+    <!-- FACTOPIA SECTION -->
+    <h2 id="cool" style="text-align:center;">Factopia</h2>
+    <p style="text-align:center;">Now wanna know some awesome facts about space?!<br>Lemme share some steaming hot space buns</p>
+
+    <div class="fact-section">
+        <!-- Fact 1 -->
+        <div class="card-container" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Did ya know that...</h3>
+                    <p>Tap to reveal a cool space fact<br><br>Why do astronauts have to face painful "fingernail delamination" after working in space?</p>
+                </div>
+                <div class="card-back">
+                    <h3>The fact:</h3>
+                    <p>Spacesuit gloves are so highly pressurized that they constrict blood flow and squeeze fingertips constantly. This pressure causes many astronauts' fingernails to completely separate from the nail bed and fall off after spacewalks.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fact 2 -->
+        <div class="card-container" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Did ya know that...</h3>
+                    <p>Tap to reveal a cool space fact<br><br>What terrifying thing happens to the physical shape of the human heart during long-duration spaceflights?</p>
+                </div>
+                <div class="card-back">
+                    <h3>The fact:</h3>
+                    <p>The heart physically reshapes itself into a sphere. Without Earth's gravity, the heart doesn't have to pump as hard. Because its workload drops by roughly 10%, the muscle loses shape and rounds out, though it reverts to normal later.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fact 3 -->
+        <div class="card-container" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Did ya know that...</h3>
+                    <p>Tap to reveal a cool space fact<br><br>The center of our Milky Way galaxy actually smells like a specific type of bar?</p>
+                </div>
+                <div class="card-back">
+                    <h3>The fact:</h3>
+                    <p>It smells like rum and tastes like raspberries! In 2009, astronomers discovered that a massive dust cloud at the center of our galaxy is packed with ethyl formate—the exact chemical compound that gives raspberries flavor and rum its smell.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MINI CAFE SECTION -->
+    <h2 id="mini" style="text-align:center;">Mini-Cafe (but with a twist :)</h2>
+    <p style="text-align:center;">If you are here, you probably came expecting some food, well...<br>
+    As i said, the twist is... It's an elemental cafe where you'll know where to find ingredients which you might need to cook dishes in space!</p>
+
+    <!-- Cafe Grid Container -->
+    <div class="cafe-section">
+        <!-- Ingredient 1 -->
+        <div class="background-container">
+            <div class="glass-box">
+                <h2>Ingredient 1: Sugar</h2>
+                <p>🍬 <strong>GLYCOLALDEHYDE</strong><br><br>
+                <strong>[ FOUND IN SPACE ]</strong> Drifting in massive molecular clouds near the center of our galaxy, 26,000 light-years away.<br><br>
+                <strong>[ THE COGNITIVE KICK ]</strong> This reacts to create complex sugars like ribose, meaning the fundamental ingredient used to sweeten human food (and build our very DNA) is naturally manufactured by deep-space dust storms.</p>
+            </div>
+        </div>
+
+        <!-- Ingredient 2 -->
+        <div class="background-container">
+            <div class="glass-box">
+                <h2>Ingredient 2: Salt</h2>
+                <p>🧂 <strong>SODIUM CHLORIDE</strong><br><br>
+                <strong>[ FOUND IN SPACE ]</strong> Swirling in the massive disk of gas surrounding Orion Source I, a colossal baby star.<br><br>
+                <strong>[ THE COGNITIVE KICK ]</strong> Astronomers used radio telescopes to detect glowing signatures of vaporised salt. Dying stars blast out columns of sodium and chlorine gas, which lock together to form cosmic salt crystals floating around alien solar systems.</p>
+            </div>
+        </div>
+
+        <!-- Ingredient 3 -->
+        <div class="background-container">
+            <div class="glass-box">
+                <h2>Ingredient 3: Vanilla</h2>
+                <p>🍦 <strong>VANILLIN</strong><br><br>
+                <strong>[ FOUND IN SPACE ]</strong> Detected trapped inside the icy matrices of interstellar meteorites and comets.<br><br>
+                <strong>[ THE COGNITIVE KICK ]</strong> Intense UV radiation hitting carbon-rich ice grains triggers chemical reactions that synthesize vanillin out of raw stardust, meaning the universe naturally smells like a cosmic pastry shop.</p>
+            </div>
+        </div>
+
+        <!-- Ingredient 4 -->
+        <div class="background-container">
+            <div class="glass-box">
+                <h2>Ingredient 4: Vinegar</h2>
+                <p>🍋 <strong>ACETIC ACID</strong><br><br>
+                <strong>[ FOUND IN SPACE ]</strong> Found inside Sagittarius B2, a massive star-forming dust cloud.<br><br>
+                <strong>[ THE COGNITIVE KICK ]</strong> Space is surprisingly tangy! Astronomers discovered thousands of billions of liters of acetic acid drifting through the interstellar void. If you captured these gas clouds, you’d essentially have a lifetime supply of salad dressing base.</p>
+            </div>
+        </div>
+
+        <!-- Ingredient 5 -->
+        <div class="background-container">
+            <div class="glass-box">
+                <h2>Ingredient 5: Formic Acid</h2>
+                <p>🥩 <strong>FORMIC ACID</strong><br><br>
+                <strong>[ FOUND IN SPACE ]</strong> Sweeping through massive interstellar clouds, including the colossal Sagittarius B2 star nursery.<br><br>
+                <strong>[ THE COGNITIVE KICK ]</strong> Trillions of liters of formic acid float raw in the void. On Earth, it provides a sharp, acidic bite to certain foods and prevents microbial spoilage, meaning the very tools humans use to keep food fresh are naturally manufactured across the galaxy.</p>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+     <h2 id="about" style="text-align:center;"> About the creator(Who is appararently lazier than a literal sloth T-T </h2>
+   <div class="about-joke-box">
+     <p style="text-align:center;"> Soo, yeah, if youare here, you wanna know about me which is.... not shocking   
+        at all. Im the worlds youngest robot whisperer. I started coding when i was 3 and fully completed my Phd 
+        when i was 12 (counted in months). I actually provedtheory of relativity wrong and solved all the millenium problems.
+        I a currently working on a secret space mission to get dark matter and ill test it in my own state of the art lab.
+        I also invented the time machine while i was brushing my teeth (that too by accident).
+    </p>
+    </div>
+
+   <div class="about-real-box">
+    <p> Yeah, if you read that trash, i just wasted your time >-< . So heres my real intro:
+    <br> Im an avg. high schooler who recentky entered the world of coding. And i apparently liked it.
+And wanna know why? Cuz i can make the machine do whatever i want and it would follow mty instructions. Muhahaha !<br>
+Now, this isnt my first website i coded, but the first to be live my be , so tbh im excited!
+I like to tinker with aurduino, electronics,scratch,html and recently Godot.
+I call myself luna cuz its not a good idea to use my real name on the internet though. Soo,yeah,this section was short
+but maybe ill update it later. so for now, Thankyou for visting this website. See ya on my next online lobby. 
+</p>
+<p class="signature">HackOut!</p>
+</div></div>
+
+<script>
+    function flipCard(card){
+        const innerCard=card.querySelector('.card-inner');
+        innerCard.classList.toggle('is-flipped');
+    }
+    document.addEventListener('mousemove',function(e){
+        const sparkle= document.createElement('div');
+        sparkle.className='mouse-sparkle';
+
+        sparkle.style.left= e.clientX + 'px';
+        sparkle.style.top= e.clientY + 'px';
+
+        const size= Math.random() *6+2;
+        sparkle.style.width= size +'px';
+        sparkle.style.height= size + 'px';
+
+        document.body.appendChild(sparkle);
+
+        setTimeout(() => {
+            sparkle.remove();
+        },1000);
+        });
+    </script>
+</body>
+</html> 
