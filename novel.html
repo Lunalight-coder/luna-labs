@@ -1,0 +1,293 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>  Novel </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+        <style>
+            body{
+                background-color: #0b0f19;
+                background-image: linear-gradient(135deg, #0b0f19 0%, #1e1b4b 100%);
+                font-family: 'Quicksand', sans-serif;
+                color: #f3f4f6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                overflow-x: hidden;
+            }
+            .back-btn{
+                margin-top: 20px;
+                padding: 10px 20px;
+                background: rgba(255,255,255,0.1);
+                color: #00f2fe;
+                border: 1px solid rgba(0,242,254,0.4);
+                border-radius: 8px;
+                text-decoration:none;
+                font-family: 'Orbitron',sans-serif;
+                transition: 0.3s;
+            }
+            .back-btn:hover{
+                background: rgba(0,242,254,0.2);
+                box-shadow: 0 0 15px rgba(0,242,254,0.4);
+            }
+            .book-container{
+                position: relative;
+                width: 350px;
+                height:450px;
+                transition: transform 0.5s;
+                perspective:1500px;
+            } 
+            .book{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transform-style: preserve-3d;
+                transition: transform 0.5s;
+            }
+            .page{
+                position: absolute;
+                width: 100%;
+                height:100%;
+                top:0;
+                left: 0;
+                transform-origin: left center;
+                transform-style: preserve-3d;
+                transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+                z-index: 1;
+            }
+            .front, .back{
+                position: absolute;
+                width: 100%;
+                height:100%;
+                backface-visibility: hidden;
+                padding: 30px;
+                box-sizing: border-box;
+                border-radius: 0 10px 10px 0;
+                box-shadow: inset 3px 0 10px rgba(0,0,0,0.2);
+            }
+            .front{
+                background:#f8fafc;
+                color: #1e293b;
+               
+            }
+            .back{
+                background:#f8fafc;
+                color: #1e293b;
+                transform: rotateY(180deg);
+                border-radius: 10px 0 0 10px;}
+            .cover-front{
+                background: linear-gradient(135deg, #4c1d95, #1e1b4b);
+                color: #00f2fe;
+                border: 2px solid #00f2fe;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .cover-front h1{font-family: 'Orbitron', sans-serif;}
+            .page.flipped{
+                transform: rotateY(-180deg);
+            }
+            .index-list{
+                list-style: none;
+                padding: 0;
+                margin-top: 30px;
+            }
+            .index-list li{
+                margin: 15px 0;
+                padding-bottom: 8px;
+                border-bottom: 1px dashed #cbd5e1;
+            }
+            .index-list a{
+                color: #6d28d9;
+                text-decoration: none;
+                font-weight: 700;
+            }
+
+            .index-list a:hover{
+                color: #00f2fe;
+            }
+            .novel-text{
+                line-height: 1.6;
+                font-size: 0.95rem;
+            }
+            .btn-box{
+                display: flex;
+                gap: 10px;
+                margin-top: 20px;
+            }
+            .action-btn{
+                background: #6d28d9;
+                color: white;
+                border: none;
+                padding: 8px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="book-container">
+            <div class="book" id="novelBook">
+                
+
+                <div class="page" id="p1">
+                    <div class="front cover-front">
+                        <h1> PARALLEL DREAMS</h1>
+                        <p> Weekly Novel Series </p>
+                        <p style="font-size:0.8rem; opacity:0.7;">
+                            Click the book to enter the world</p>
+        
+                        </div>
+                        <div class="back">
+                            <h2 style="font-family: 'Orbitron'; color:#4c1d95;">
+                                Table of chapters </h2>
+                                <ul class="index-list">
+                                    <li><a href="#" onclick="goToPage(2)"> Chapter I: Just A Dream</a></li>
+                                    <li><a href="#" onclick="goToPage(3)"> Chapter II: Coming soon....</a></li>
+                                </ul>
+
+
+                        
+                                </div>
+                </div>
+
+                <div class="page" id="p2">
+                    <div class="front">
+                        <h3> Chapter I: Just A Dream</h3>
+                        <p class="novel-text"> It was just a dream.
+                            Atleast thats what i though ...
+                            I was hanging off from a cliff,holding on to the hand of an unknown boy. "Theia, hold on tight.
+                            please dont leave me. Not this time!", I heard him whisper in a weak,trembling voice. I gazed
+                            down. Below me was a dark abyss which seemed hungry,ready to devour anything that fell.
+                            I tried to hold on to his hand, not because he told me to. But because of my survival instincts. 
+                            But my hands couldnt defy gravity. Each second my fingers loosened, bit by bit.
+
+
+                        </p>
+                        </div>
+
+                        <div class="back">
+                            <p class="novel-text">  And then..
+                            I fell. The distance between me and the unknown boy kept on increasing as continued being engulfed by the 
+                            darkness below me. complete darkness, and it vomitted me back to the placewhere i belong - 'REALITY'
+                            I woke up,gasping.</p>
+                    </div>
+            
+            </div>
+             <div class="page" id="p3">
+                    <div class="front">
+                        <h3> Chapter II: COMING SOON...</h3>
+                        <p class="novel-text"> UC</p>
+                        </div>
+
+                        <div class="back">
+                            <h3> The End </h3>
+                            <p class="novel-text"> Thanks for reading</p>
+                    </div>
+            
+            </div>
+            </div><div>
+
+            <div class="btn-box">
+                <button class="action-btn" onclick="prevPage()">
+                   ◀BACK  </button>
+                 <button class="action-btn" onclick="nextPage()">
+                    ▶NEXT </button>
+                   </div>
+
+         <a href="index.html" class="back-btn"> Return to Lunas Lobby</a>
+         <script>
+           let currentLoc=1;
+           let maxLoc=4;
+           
+           const p1= document.getElementById("p1");
+           const p2= document.getElementById("p2");
+        
+           const p3= document.getElementById("p3");
+           const book= document.getElementById("novelBook");
+
+           function openBook(){
+            book.style.transform="translateX(50%)";
+           }
+           function closeBook(isAtStart){
+            if(isAtStart){
+                book.style.transform="translateX(0%)";
+            }else{
+                book.style.transform="translateX(100%)";
+            }
+           }
+           function nextPage(){
+            if(currentLoc<maxLoc){
+                switch(currentLoc){
+                    case 1:
+                    openBook();
+                    p1.classList.add("flipped");
+                    p1.style.zIndex=1;
+                    break;
+                    case 2:
+                    p2.classList.add("flipped");
+                    p2.style.zIndex=2;
+                    break;
+                    case 3:
+                    p3.classList.add("flipped");
+                    closeBook(false);
+                    break;
+                }
+                currentLoc++;
+            }
+           }
+
+
+
+            function prevPage(){
+            if(currentLoc>1){
+                switch(currentLoc){
+                    case 2:
+                    closeBook(true);
+                    p1.classList.remove("flipped");
+                    p1.style.zIndex=3;
+                    break;
+                    case 3:
+                    p2.classList.remove("flipped");
+                    p2.style.zIndex=2;
+                    break;
+                    case 4:
+                    openBook()
+                    p3.classList.remove("flipped");
+                    p3.style.zIndex=1;
+                    break;
+                }
+                currentLoc--;
+            }
+           }
+
+           function goToPage(pageIndex){
+            event.preventDefault();
+            while(currentLoc<pageIndex){
+                nextPage();
+            }
+            while(currentLoc>pageIndex){
+                prevPage();
+            }
+
+           }
+           p1.addEventListener("click", function(e){
+            if(currentLoc===1)nextPage();
+           });
+
+           
+            </script>
+
+
+
+        </body>
+        </html>
