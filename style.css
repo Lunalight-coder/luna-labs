@@ -83,13 +83,13 @@ hr {
 }
 
 .card-front {
-    background-color: #008b8b; /* darkcyan */
-    color: #00ffff; /* aqua */
+     background: linear-gradient(135deg, rgba(245, 249, 39, 0.642), rgba(234, 100, 178, 0.4));
+    color:linear-gradient; 
 }
 
 .card-back {
-    background-color: #191970; /* midnightblue */
-    color: #f0f8ff; /* aliceblue */
+     background: linear-gradient(135deg, rgba(232, 19, 228, 0.4), rgba(228, 221, 14, 0.4));
+    color: #f0f8ff; 
     transform: rotateY(180deg);
 }
 
@@ -105,7 +105,7 @@ hr {
 .background-container {
     width: 100%;
     max-width: 600px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #e1ea66 0%, #f052b9 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,12 +124,12 @@ hr {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(139, 21, 21, 0.25);
     box-sizing: border-box;
 }
 
 .glass-box h2 {
-    color: #ffffff;
+    color: #1a055f;
     margin: 0 0 15px 0;
     font-size: 1.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -137,7 +137,7 @@ hr {
 }
 
 .glass-box p {
-    color: #e2e8f0;
+    color: #1860bd;
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.5;
@@ -229,10 +229,10 @@ h1:hover{
     }
     
     .about-joke-box, .about-real-box{
-        background: linear-gradient(135deg, rgba(147,51,234,0.4), rgba(59,130,246,0.4));
+        background: linear-gradient(135deg, rgba(228, 232, 19, 0.4), rgba(234, 100, 178, 0.4));
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border:1px solid rgba(92, 196, 241, 0.2);
+        border:1px solid rgba(134, 204, 234, 0.2);
         border-radius: 16px;
         padding: 25px;
         margin-bottom: 25px;
@@ -241,7 +241,10 @@ h1:hover{
     }
     .signature{
         font-weight: 700;
-        color:#3b82f6;
+        color:#799fde;
         margin-top: 15px;
+        border-radius: 90px;
+        box-shadow: #0b0f19;
+        border-top: #0b0f19;
     }
   
